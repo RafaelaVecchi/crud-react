@@ -1,0 +1,147 @@
+/* Estilos para o contêiner da lista de usuários */
+.user-list-container {
+  width: 80%; 
+  margin: 40px auto;
+  padding: 30px; 
+  background: rgb(226, 164, 164);
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Título da lista de usuários */
+.user-list-title {
+  font-size: 32px; 
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; 
+}
+
+/* Lista de usuários em grid */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estilo para cada item da lista */
+.user-item {
+  background: #FFD0C7;
+  padding: 25px;
+  border-radius: 12px; 
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Nome do usuário */
+.user-name {
+  font-size: 22px; 
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 12px; 
+}
+
+/* Informações do usuário */
+.user-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-info span {
+  font-size: 16px;
+  color: #444;
+  background: #f1f1f1;
+  padding: 8px 16px;
+  border-radius: 8px; 
+  display: inline-block;
+  margin: 4px 0;
+}
+
+/* Estilos do Modal */
+.DialogContent {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; 
+}
+
+/* Estilos do título e descrição no modal */
+.DialogHeader {
+  margin-bottom: 20px;
+}
+
+.DialogTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.DialogDescription {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px; 
+}
+
+/* Estilos para os campos de entrada no modal */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  border-color: #ff9fef;
+  outline: none;
+}
+
+
+/* Estilo do botão "Salvar" */
+button[type="submit"] {
+  background-color: rgb(255, 164, 192); 
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px; 
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(255, 192, 192); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 90%;
+  }
+  .user-list {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
